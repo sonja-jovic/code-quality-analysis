@@ -1,0 +1,111 @@
+code,label
+"def add(a,b): return a+b",good
+"def f(x): x=x+1; x=x+2",average
+"def bad(): print(1);print(2);print(3)",bad
+"def multiply(a,b): return a*b",good
+"def g(x): x=x*2; x=x*3",average
+"def messy(): print(1);print(2);print(3);print(4)",bad
+"def divide(a,b):\n    if b==0:\n        return None\n    return a/b",good
+"def h(x):x+=1;x+=2;x+=3",average
+"def ugly(): a=1;b=2;c=3;print(a+b+c)",bad
+"def subtract(a,b):\n    result=a-b\n    return result",good
+"def j(x):x=x+1;x=x+1",average
+"def chaos():print(1);print(2);print(3);print(4);print(5)",bad
+"def square(n):\n    return n*n",good
+"def k(x): x=x+1; x=x+1; x=x+1",average
+"def spam():print('a');print('b');print('c')",bad
+"def cube(n):\n    return n**3",good
+"def l(x):x*=2;x*=3",average
+"def badstyle(): a=1;b=2;c=3;d=4;print(a+b+c+d)",bad
+"def greet(name):\n    print('Hello',name)",good
+"def m(x):x+=1;x+=2",average
+"def terrible():print(1);print(2)",bad
+"def average(nums):\n    return sum(nums)/len(nums)",good
+"def n(x):x+=1;x+=1;x+=1;x+=1",average
+"def noisy():print('a');print('b');print('c');print('d')",bad
+"def power(a,b):\n    return a**b",good
+"def o(x):x=x+1;x=x+2;x=x+3",average
+"def clutter():a=1;b=2;c=3;d=4;e=5;print(a+b+c+d+e)",bad
+"def even(n):\n    return n%2==0",good
+"def p(x):x+=2;x+=3",average
+"def uglyloop():print(1);print(2);print(3)",bad
+"def factorial(n):\n    if n==0:\n        return 1\n    return n*factorial(n-1)",good
+"def q(x):x*=2;x*=2;x*=2",average
+"def messycalc():a=1;b=2;c=3;print(a+b+c)",bad
+"def reverse(s):\n    return s[::-1]",good
+"def r(x):x=x+1;x=x+2",average
+"def junk():print('x');print('y')",bad
+"def max_value(a,b):\n    return a if a>b else b",good
+"def s(x):x+=1;x+=1;x+=2",average
+"def clutter2():a=1;b=2;c=3;d=4;print(a+b+c+d)",bad
+"def min_value(a,b):\n    return a if a<b else b",good
+"def t(x):x+=2;x+=2",average
+"def chaos2():print(1);print(2);print(3);print(4)",bad
+"def length(lst):\n    return len(lst)",good
+"def u(x):x+=1;x+=3",average
+"def badprint():print('a');print('b');print('c');print('d')",bad
+"def upper(s):\n    return s.upper()",good
+"def v(x):x*=2;x*=3",average
+"def uglymath():a=1;b=2;c=3;print(a*b*c)",bad
+"def lower(s):\n    return s.lower()",good
+"def w(x):x+=1;x+=1;x+=1",average
+"def spam2():print('spam');print('eggs')",bad
+"def contains(lst,val):\n    return val in lst",good
+"def x(x1):x1+=1;x1+=2",average
+"def clutter3():a=1;b=2;c=3;print(a+b)",bad
+"def double(n):\n    return n*2",good
+"def y(x):x+=2;x+=4",average
+"def noisy2():print(1);print(2)",bad
+"def triple(n):\n    return n*3",good
+"def z(x):x+=3;x+=4",average
+"def ugly3():print('1');print('2');print('3')",bad
+"def sum_list(nums):\n    total = 0\n    for n in nums:\n        total += n\n    return total",good
+"def find_max(values):\n    max_val = values[0]\n    for v in values:\n        if v > max_val:\n            max_val = v\n    return max_val",good
+"def factorial(n):\n    if n <= 1:\n        return 1\n    return n * factorial(n-1)",good
+"def is_even(n):\n    return n % 2 == 0",good
+"def greet(name):\n    message = f'Hello {name}'\n    return message",good
+"def filter_even(nums):\n    result = []\n    for n in nums:\n        if n % 2 == 0:\n            result.append(n)\n    return result",good
+"def count_words(text):\n    words = text.split()\n    return len(words)",good
+"def reverse_string(s):\n    return s[::-1]",good
+"def safe_divide(a,b):\n    if b == 0:\n        return None\n    return a / b",good
+"def average(nums):\n    if not nums:\n        return 0\n    return sum(nums) / len(nums)",good
+
+"def process(x): x=x+1; x=x+2; x=x+3; return x",average
+"def modify(value): value+=1; value+=2; value+=3; return value",average
+"def calc(n): n=n*2; n=n+5; return n",average
+"def change(x): x+=4; x+=3; x+=2; return x",average
+"def update(x): x=x*2; x=x*2; return x",average
+"def adjust(v): v=v+1; v=v+1; v=v+1; return v",average
+"def compute(num): num=num*3; num=num+2; return num",average
+"def transform(x): x+=2; x+=3; x+=4; return x",average
+"def alter(x): x=x+2; x=x+2; x=x+2; return x",average
+"def tweak(x): x+=5; x+=1; return x",average
+
+"def bad(): print(1);print(2);print(3)",bad
+"def messy(): a=1;b=2;c=3;d=4;print(a+b+c+d)",bad
+"def ugly():print('a');print('b');print('c');print('d')",bad
+"def spam():print(1);print(2);print(3);print(4);print(5)",bad
+"def clutter():a=1;b=2;c=3;d=4;e=5;f=6;print(a+b+c+d+e+f)",bad
+"def chaos():print('x');print('y');print('z');print('w')",bad
+"def noise():print(1);print(1);print(1);print(1)",bad
+"def junk():print('a');print('b')",bad
+"def terrible():a=1;b=2;c=3;print(a+b+c)",bad
+"def badstyle():x=1;y=2;z=3;print(x+y+z)",bad
+
+"def fibonacci(n):\n    if n <= 1:\n        return n\n    return fibonacci(n-1) + fibonacci(n-2)",good
+"def get_unique(items):\n    seen = set()\n    for item in items:\n        seen.add(item)\n    return list(seen)",good
+"def flatten(list_of_lists):\n    result = []\n    for sub in list_of_lists:\n        for item in sub:\n            result.append(item)\n    return result",good
+"def count_occurrences(lst,val):\n    count = 0\n    for item in lst:\n        if item == val:\n            count += 1\n    return count",good
+"def remove_none(lst):\n    return [x for x in lst if x is not None]",good
+
+"def calc2(x): x+=1;x+=2;x+=3;x+=4;return x",average
+"def calc3(x): x=x+1;x=x+2;x=x+3;x=x+4;return x",average
+"def calc4(x): x=x*2;x=x*3;return x",average
+"def calc5(x): x+=3;x+=3;x+=3;return x",average
+"def calc6(x): x=x+5;x=x+1;return x",average
+
+"def spam2():print(1);print(2);print(3)",bad
+"def spam3():print('spam');print('spam');print('spam')",bad
+"def spam4():print('x');print('y');print('z')",bad
+"def spam5():print(0);print(1);print(2);print(3)",bad
+"def spam6():print('hello');print('hello');print('hello')",bad
