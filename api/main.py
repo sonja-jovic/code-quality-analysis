@@ -1,6 +1,7 @@
 from fastapi import FastAPI
 import torch
 import tensorflow as tf
+import numpy as np
 
 from model.feature_extractor import extract_features
 from llm.analysis import analyze_code_llama
@@ -11,7 +12,7 @@ from model.pytorch_model import CodeQualityModel
 # SELECT MODEL TYPE HERE
 # =================================
 
-MODEL_TYPE = "pytorch"
+MODEL_TYPE = "tensorflow"
 # options:
 # "pytorch"
 # "tensorflow"
@@ -51,7 +52,7 @@ def analyze(payload: dict):
         label = label_map[pred.argmax().item()]
 
     elif MODEL_TYPE == "tensorflow":
-        pred = model.predict([features])
+        pred = model.predict(np.array([features]))
         label = label_map[pred.argmax()]
 
     explanation = analyze_code_llama(code)
