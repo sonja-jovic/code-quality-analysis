@@ -8,6 +8,3 @@ uvicorn
 asttokens
 radon
 ollama
-chromadb
-langchain
-sentence-transformers
