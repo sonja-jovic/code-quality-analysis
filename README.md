@@ -1,8 +1,10 @@
 **SUMMARY**
+
 This project is a simple API that analyzes the quality of a Python code snippet.
 You have the option between using the PyTorch-trained and TensorFlow-trained ML model.
 
 **RUN LOCALLY**
+
 Run the following instructions to run this project locally:
 1. Navigate to the project folder on PowerShell or a VSCode terminal.
 2. This project requires Python 3.11; run python --version to verify.
